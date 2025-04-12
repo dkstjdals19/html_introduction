@@ -6,7 +6,29 @@
     <title>Login</title>
     <link rel="stylesheet" href="./css/style.css"/>
     <style>
-    
+    .container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      margin-top : 40px ;
+      text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    }
+    .container h1{
+      font-size : 10rem;
+      margin-bottom : 40px;
+      
+    }
+    .container input{
+      font-size : 2rem;
+    }
+    .container button{
+      margin-top : 40px;
+      padding: 35px 90px;
+      border-radius: 60px;
+      font-size: 3rem;
+      background:linear-gradient(to right,skyblue,white)
+      
+    }
     </style>
 </head>
 <body>
@@ -27,5 +49,12 @@
     
 
      <!-- 로그인 페이지 -->
+    <div class="container">
+      <h1>Login</h1>
+      <input placeholder="아이디를 입력해주세요.">
+      <input placeholder="비밀번호를 입력해주세요.">
+      <button>로그인</button>
+
+    </div>
 </body>
 </html>
