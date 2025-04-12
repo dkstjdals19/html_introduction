@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .inner-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .container h2 {
+      font-size: 3rem;
+    }
+
+    .box {
+      width: 300px;
+      height: 400px;
+      border: 1px solid black;
+      border-radius: 20px;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      
+    }
+
+    .box h4 {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .box p {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align : justify;
+    }
+
+    .box-1 {
+      background-color: white;
+      color: black;
+    }
+
+    .box-2 {
+      background-color: blueviolet;
+      color: white;
+    }
+
+    .box-3 {
+      background-color: black;
+      color: white;
+    }
+    
+    @media(max-width:1100px){
+        .inner-container{
+            flex-wrap:wrap;
+        }
+    }
+
+    /* 네비게이션바 관련 기본 스타일은 따로 style.css에서 처리한다고 가정 */
+  </style>
+</head>
+<body>
+  <!-- 네비게이션바 -->
+  <nav>
+    <div class="inner-box">
+      <div class="logo">
+        <a href="index.html">My Home</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="selected">Portfolio</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Portfolio 페이지 -->
+  <div class="container">
+    <h2>Products</h2>
+    <div class="inner-container">
+      <div class="box box-1">
+        <h4>개요</h4>
+        <p>길은 지금 긴 산허리에 걸려 있다. 밤중을 지난 무렵인지 죽은 듯이 고요한 속에서 짐승 같은 달의 숨소리가 손에 잡힐 듯이 들리며, 콩 포기와 옥수수 잎새가 한층 달에 푸르게 젖었다. 산허리는 온통 메밀밭이어서 피기 시작한 꽃이 소금을 뿌린 듯이 흐뭇한 달빛에 숨이 막힐 지경이다.</p>
+      </div>
+      <div class="box box-2">
+        <h4>메밀꽃 필 무렵으로 되기까지의 과정</h4>
+        <p>이효석 작가의 단편소설로 1936년 10월 잡지 《조광》(조선일보사 발행)에 "모밀꽃 필 무렵"이라는 이름으로 수록되었지만, 이후 표준어가 정립되고 나서 "메밀꽃 필 무렵"으로 정착되었다.</p>
+      </div>
+      <div class="box box-3">
+        <h4>작가소개</h4>
+        <p>1907년 이 작품의 배경인 강원도 봉평에서 태어났습니다. 1928년 《조선지광》에 <도시와 유령>을 발표하면서 등단했습니다. 이효석은 소설 장르의 특징인 갈등을 중심으로 이야기하기보다는 서정적인 아름다움을 중심으로 한 독특한 세계를 개척했습니다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
